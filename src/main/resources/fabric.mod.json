@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gastronomica",
+	"version": "${version}",
+	"name": "Gastronomica",
+	"description": "Gastronomica is a mod inspired by BOTW that aims to add new wacky food recipes to the game!",
+	"authors": [
+		"PainIsHere"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gastronomica/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.noelle.gastronomica.Gastronomica"
+		],
+		"client": [
+			"net.noelle.gastronomica.GastronomicaClient"
+		],
+		"fabric-datagen": [
+			"net.noelle.gastronomica.GastronomicaDataGenerator"
+		]
+	},
+	"mixins": [
+		"gastronomica.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

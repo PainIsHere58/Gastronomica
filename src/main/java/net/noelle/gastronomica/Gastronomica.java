@@ -2,6 +2,8 @@ package net.noelle.gastronomica;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.noelle.gastronomica.item.ModItemGroups;
+import net.noelle.gastronomica.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +13,7 @@ public class Gastronomica implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
